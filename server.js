@@ -22,6 +22,8 @@ const MoviesDB = require("./modules/moviesDB.js");
 const db = new MoviesDB();
 
 
+app.listen(process.env.PORT||3000)
+
 
 
 
