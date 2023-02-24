@@ -20,7 +20,7 @@ const HTTP_PORT = process.env.PORT || 8080;
 const mongoose = require('mongoose')
 const MoviesDB = require("./modules/moviesDB.js");
 const db = new MoviesDB();
-
+db.initialize(process.env.MONGODB_CONN_STRING)
 
 app.listen(process.env.PORT||3000)
 
